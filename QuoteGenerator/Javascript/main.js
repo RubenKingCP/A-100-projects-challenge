@@ -1,25 +1,16 @@
 const submitBtn = document.getElementById("submitBtn");
 let details = document.getElementById("quote-details");
 let users = document.getElementById("quote-user");
+const PLACEHOLDERBTN = document.getElementById("placeholder")
+const CURTAIN = document.getElementById("curtain");
+const CANVA = document.getElementById("canca")
+let test123 = CANVA.getContext("2d");
 
-
-let obj = {
-    quote1: {
-        details: "hey this is a test",
-        user: "this is made by me"
-    }
-};
-
-class quotes{
-    constructor(quote, user) {
-        this.quote = details.value;
-        this.user = users.value;
-    }
-}
 
 function change_page() {
-    let wew = details.value;
-    window.location.href = "quote.html";
+    CURTAIN.classList.toggle("hidden");
+    test123.fillText(details.value, (CANVA.width / 2) - 17, (CANVA.height / 2) + 8);
 }
 
 submitBtn.addEventListener("click", change_page);
+PLACEHOLDERBTN.addEventListener("click", change_page);

@@ -13,15 +13,24 @@
         <form action="" method="post">
             <h1 class="main">Quote Generator</h1>
             <div class="textarea-wrapper main">
-                <textarea name="quote" id="quote-details" cols="30" rows="10" class="textarea" placeholder="Enter your quote..."required=""></textarea>
+                <textarea name="quote" id="quote-details" cols="30" rows="10" class="textarea" placeholder="Enter your quote..."></textarea>
             </div>
             <div class="textarea-wrapper main">
-                <textarea name="user" id="quote-user" cols="30" rows="10" class="textarea" placeholder="Quote creator..." required=""></textarea>
+                <textarea name="user" id="quote-user" cols="30" rows="10" class="textarea" placeholder="Quote creator..."></textarea>
             </div>
             <div class="btn-wrapper main">
                 <button id="submitBtn" class="btn" type="button"></button>
             </div>
         </form>
     </section>
+    <div id="curtain" class="curtain hiden">
+        <div class="text-wrapper">
+            <div class="title">
+                <button id="placeholder" class="btn"></button>
+            </div>
+            <canvas id="canca"></canvas>
+            <button id="download" class="btn"></button>
+        </div>
+    </div>
 </body>
 </html>
